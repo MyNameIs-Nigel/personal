@@ -7,22 +7,60 @@
     <meta name="author" content="Nigel Smith">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <a class='logo-link' href="#">
+            <img src="img/logo.svg" class="logo" alt="Main Logo">
+        </a>
         <nav id="navbar">
             <a href="#">Home</a>
-            <a href="#">Photography</a>
-            <a href="#">Cars</a>
+            <a class="middle" href="#photography">Photography</a>
+            <a href="#cars">Cars</a>
         </nav>
-        <hr class="navbar">
     </header>
     <main>
         <div id="hero">
             <section class="hero-text">
                 <h1>Welcome to my personal website</h1>
+                <h3>My name is Nigel Smith, a student at BYU-Idaho. I am making this personal site for my class</h3>
+                <a class="button-medium" href="#photography">Learn More</a>
             </section>
         </div>
+        <div id="photography">
+            <section class="med-content">
+                <h1>Photography</h1>
+                <hr class="full">
+                <h3>My top shots!</h3>
+            </section>
+            <section class="grid">
+                <div id="img-1">
+                    <h3>Pontiac in the Snow</h3>
+                    <hr class="full">
+                    <img class="gridimg" src="img/pontiac.jpg" alt="Silver Sedan Covered in Snow">
+                    <p class="gridp">My car, a Pontiac G6, in the snow. </p>
+                </div>
+                <div id="sp-1" class="spacer"></div>
+                <div id="img-2">
+                    <h3>Tyler in the Groove</h3>
+                    <hr class="full">
+                    <img class="gridimg" src="img/tyler.jpg" alt="Silver Sedan Covered in Snow">
+                    <p class="gridp">Tyler, an acquaintance of mine that I photographed.</p>
+
+                </div>
+                <div id="sp-2" class="spacer"></div>
+                <div id="img-3">
+                    <h3>Science and Technology Center</h3>
+                    <hr class="full">
+                    <img class="gridimg" src="img/stc.jpg" alt="Silver Sedan Covered in Snow">
+                    <p class="gridp">This is the STC Building at BYU-Idaho.</p>
+                </div>
+            </section>
+        </div>
+
     </main>
     <footer>
         Footer
