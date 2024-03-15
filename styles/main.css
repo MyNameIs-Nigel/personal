@@ -1,15 +1,24 @@
+/*
+#FCF7F8 -- Platinum White Accent
+#2B4B6F -- Mid Blue Accent
+#1E5CA2 -- Lighter Blue
+#AA6939 -- Orange
+#CED3DC -- Gray
+*/
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    background-color: #DDD;
+    animation: fadeIn 1s;
+    background-color: #CED3DC;
 }
 
 header {
-    background-color: white;
-    border-color: #333;
+    background-color: #FCF7F8;
+    border-color: #0D0A0B;
     border-style: solid;
     border-width: 0px 0px 3px 0px;
     padding-top: 8px;
@@ -21,6 +30,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 99;
 }
 
 header nav {
@@ -76,7 +86,7 @@ section.hero-text h3 {
     padding: 7px 70px;
     margin: 10px 0px;
     font-family: "Inter", sans-serif;
-    color: black;
+    color: #0D0A0B;
     transition: 0.3s;
     font-size: 1em;
 }
@@ -115,7 +125,13 @@ div#hero {
     border-radius: 12px;
     transition: 5s;
     width: 90%;
-    margin: auto;   
+    margin: auto;
+    transition: opacity 0.5s;
+    opacity: 100%;   
+}
+
+div#hero:hover {
+    opacity: 95%;
 }
 
 .hero-text {
@@ -186,7 +202,15 @@ img.gridimg {
     width: 90%;
     margin: auto;
     display: block;
+    border-radius: 6px;
+    animation: fadeIn 2s;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
 
 .gridp {
     width: 90%;
@@ -199,4 +223,67 @@ img.gridimg {
 
 p {
     font-family: 'Inter', sans-serif;
+}
+
+#teaser {
+    background-color: #1f3044;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 8px;
+    margin-top: 80px;
+    z-index: 20;
+}
+
+h1.teaser {
+    color: #FCF7F8;
+    width: 60%;
+    text-align: left;
+    border-radius: 8px;
+    margin: 35px 40px;
+    text-shadow: 0px 1px 8px #0d0a0b93;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    margin: 40px 20px;
+    margin: 0 60px;
+
+}
+
+#content-middle {
+    margin-top: -5px;
+    background-color: #FCF7F8;
+    padding: 100px 0;
+    z-index: 10;
+}
+
+.photogrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 60px;
+}
+
+.photogrid-container {
+    width: 22%;
+    border: 1px solid #999;
+    background-color: #FCF7F8;
+}
+
+.photogrid-container:hover {
+    border: 1px solid #0D0A0B;
+}
+
+.photogrid-img {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    width: 240px;
+    display: block;  
+  
 }
