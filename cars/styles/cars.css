@@ -101,20 +101,3 @@ main {
     margin: 100px auto;
 }
 
-/* Temp */
-
-img {
-    max-width: 250px;
-}
-
-#bottom {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-
-#bottom svg {
-    width: 2em;
-    margin: 15px;
-}
