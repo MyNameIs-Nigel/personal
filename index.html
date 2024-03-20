@@ -1,7 +1,8 @@
 <html>
 <head>
-    <title>Nigel's Site</title>
+    <title>Home | Nigel's Site</title>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/img/favicon/favicon-32x32.png">
     <meta name="description" content="Nigel's Personal Website">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Nigel Smith">
@@ -13,14 +14,16 @@
 </head>
 <body>
     <header>
-        <a class='logo-link' href="#">
-            <img src="img/logo.svg" class="logo" alt="Main Logo">
-        </a>
-        <nav id="navbar">
-            <a href="#">Home</a>
-            <a class="middle" href="#photography">Photography</a>
-            <a href="#cars">Cars</a>
-        </nav>
+        <div id="navbar">
+            <a href="./">
+                <img src="../img/logo.svg" class="logo" alt="Main Logo">
+            </a>
+            <nav>
+                <a class="navbar" href="./">Home</a>
+                <a class="middle navbar" href="./photography">Photography</a>
+                <a class="navbar" href="./cars">Cars</a>
+            </nav>
+        </div>
     </header>
     <main>
         <div id="hero">
@@ -103,14 +106,61 @@
                     <p class="gridp">Plane taking to the skies</p>
                 </div>
             </div>
-            <a href="photography" class="button-medium center">Photography Page</a>
+            <a href="photography" id="photo-button" class="button-medium center">Photography Page</a>
             <section id="contact">
-
+                <h1>Get in Touch!</h1>
+                <div class="contact">
+                    <div class="contact-form">
+                        <form action="action.php">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        
+                            <label for="reason">Reason For Contact</label>
+                            <select id="reason" name="reason">
+                            <option value="empty">Change ME</option>
+                            <option value="photos">Photography</option>
+                            <option value="tuning">Cars/Tuning</option>
+                            <option value="hello">To Say Hello (OTHER)</option>
+                            </select>
+                        
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        
+                            <input type="submit" value="Submit">                    
+                        </form>
+                    </div>
+                    <div class="contact-img"></div>
+                </div>
             </section>
+        </div>
+        <div id="bottom">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390.14 390.14">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #1f304469;
+                    stroke-width: 0px;
+                    transition: 0.5s;
+                  }
+                  .cls-1:hover {
+                    fill: #1f3044;
+                  }
+                </style>
+              </defs>
+              <path class="cls-1" d="M370.3,0H19.84C8.88,0,0,8.88,0,19.84v350.46c0,10.96,8.88,19.84,19.84,19.84h350.46c10.96,0,19.84-8.88,19.84-19.84V19.84c0-10.96-8.88-19.84-19.84-19.84ZM241.24,307.13h-51.58l-82.27-119.62h-1.33v119.62h-61.81V79.45h52.47l80.93,119.17h1.78v-119.17h61.81v227.67ZM331.46,295.29c-2.93,4.71-6.73,8.45-11.4,11.23-4.67,2.78-9.75,4.17-15.23,4.17-8.6,0-15.95-3.02-22.07-9.06-6.11-6.04-9.14-13.4-9.06-22.07-.08-8.45,2.95-15.68,9.06-21.68,6.11-6,13.47-9,22.07-9,8.15,0,15.36,3,21.62,9,6.26,6,9.43,13.23,9.5,21.68-.08,5.78-1.58,11.02-4.5,15.73Z"/>
+            </svg>
         </div>
     </main>
     <footer>
-        Footer
+        <div class="footer-legal">
+            <p>Copyright &copy;2024 Nigel Smith</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+        </div>
     </footer>
 </body>
 </html>
