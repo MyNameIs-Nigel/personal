@@ -93,7 +93,7 @@ div.footer-legal {
 }
 
 
-/* Main Content */
+/* Main Content and Global*/
 
 main {
     width: 100%;
@@ -101,11 +101,107 @@ main {
     margin: 100px auto;
 }
 
-/* Temp */
-
-img {
-    max-width: 250px;
+.quote {
+    font-style: italic;
 }
+
+hr {
+    border: 1px solid #363636;
+    margin: 60px auto;
+    width: 90%;
+}
+
+h2 {
+    font-size: 2em;
+    padding-top: 48px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+/* First Part */
+
+#first {
+    text-align: center;
+    background-color: #FCF7F8;
+    border-radius: 24px;
+    width: 100%;
+    margin: auto;
+}
+
+#car-showcase {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px;
+}
+
+.vertical {
+    width: 25%;
+}
+
+.vertical img {
+    width: 100%;
+    max-width: 320px;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Horizontal Projects */
+
+
+
+.horizontal {
+    display: flex;
+    margin: 100px auto;
+    width: 90%;
+    padding-bottom: 50px;
+
+}
+
+.horizontal p {
+    padding: 0 40px;
+    text-align: justify;
+    margin-top: 12px;
+    font-size: 1.2em;
+}
+
+.horizontal img {
+    max-width: 30%;
+    border-radius: 12px;
+}
+
+/* Skills */
+
+#skills h2 {
+    text-align: center;
+}
+
+.skills-container {
+    background-color: #FCF7F8;
+    border-radius: 24px;
+    width: 100%;
+    margin: 48px 0;
+    display: flex;
+    justify-content: left;
+}
+
+.skills-img {
+    width: 400px;
+    height: 400px;
+    padding: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.skills-text {
+    padding: 20px 200px;
+    font-size: 1.3em;
+}
+
+
+/* Temp */
 
 #bottom {
     width: 100%;
