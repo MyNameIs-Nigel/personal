@@ -165,12 +165,41 @@ h1 {
     text-align: justify;
     margin-top: 12px;
     font-size: 1.2em;
+    width: 60%;
 }
 
-.horizontal img {
-    max-width: 30%;
-    border-radius: 12px;
+div.slideshow {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: #0D0A0BAA 2px 2px;
+    transition: 0.3s;
 }
+
+.one {
+    background-image: url(../img/pontiac-side.jpg);
+}
+
+.one:hover {
+    background-image: url(../img/DSC01032.jpg);
+}
+
+.two {
+    background-image: url(../img/honda.JPEG);
+}
+
+.two:hover {
+    background-image: url(../img/honda2.jpg);
+}
+
+/* .slideshow img {
+    width: 100%;
+    border-radius: 12px;
+} */
 
 /* Skills */
 
